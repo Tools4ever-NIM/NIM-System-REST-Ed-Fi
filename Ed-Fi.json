@@ -1,0 +1,985 @@
+{
+    "schema": {
+        "crud_objects": {
+            "addressTypeDescriptors":{
+                "operations":{
+                    "addressTypeDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/addressTypeDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "calendars":{
+                "operations":{
+                    "calendarsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/calendars"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "calendarCode": "string*",
+                    "schoolReference": {
+                        "schoolId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "calendarTypeDescriptor": "string*",
+                    "gradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "string*"
+                        }
+                    ],
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "citizenshipStatusDescriptors":{
+                "operations":{
+                    "citizenshipStatusDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/citizenshipStatusDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "classPeriods":{
+                "operations":{
+                    "classPeriodsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/classPeriods"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "classPeriodName": "string*",
+                    "schoolReference": {
+                        "schoolId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "meetingTimes": [
+                        {
+                            "endTime": "string*",
+                            "startTime": "string*"
+                        }
+                    ],
+                    "officialAttendancePeriod": "boolean*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "classroomPositionDescriptors":{
+                "operations":{
+                    "classroomPositionDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/classroomPositionDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "cohortScopeDescriptors":{
+                "operations":{
+                    "cohortScopeDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/cohortScopeDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "cohortTypeDescriptors":{
+                "operations":{
+                    "cohortTypeDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/cohortTypeDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "cohortYearTypeDescriptors":{
+                "operations":{
+                    "cohortYearTypeDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/cohortYearTypeDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "contacts":{
+                "operations":{
+                    "contactsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/contacts"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "contactUniqueId": "string*",
+                    "personReference": {
+                        "personId": "_:string",
+                        "sourceSystemDescriptor": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "addresses": [
+                        {
+                            "addressTypeDescriptor": "string*",
+                            "stateAbbreviationDescriptor": "string*",
+                            "city": "string*",
+                            "postalCode": "string*",
+                            "streetNumberName": "string*",
+                            "localeDescriptor": "string*",
+                            "apartmentRoomSuiteNumber": "string*",
+                            "buildingSiteNumber": "string*",
+                            "congressionalDistrict": "string",
+                            "countyFIPSCode": "string",
+                            "doNotPublishIndicator": "boolean",
+                            "latitude": "string",
+                            "longitude": "string",
+                            "nameOfCounty": "string*",
+                            "periods": [
+                                {
+                                    "beginDate": "string*",
+                                    "endDate": "string*"
+                                }
+                            ]
+                        }
+                    ],
+                    "electronicMails": [
+                        {
+                            "electronicMailTypeDescriptor": "string*",
+                            "electronicMailAddress": "string*",
+                            "doNotPublishIndicator": "boolean*",
+                            "primaryEmailAddressIndicator": "boolean*"
+                        }
+                    ],
+                    "firstName": "string*",
+                    "genderIdentity": "string",
+                    "generationCodeSuffix": "string",
+                    "highestCompletedLevelOfEducationDescriptor": "string",
+                    "internationalAddresses": [
+                        {
+                            "addressTypeDescriptor": "string*",
+                            "countryDescriptor": "string*",
+                            "addressLine1": "string*",
+                            "addressLine2": "string*",
+                            "addressLine3": "string*",
+                            "addressLine4": "string*",
+                            "beginDate": "string*",
+                            "endDate": "string*",
+                            "latitude": "string",
+                            "longitude": "string"
+                        }
+                    ],
+                    "languages": [
+                    {
+                        "languageDescriptor": "string*",
+                        "uses": [
+                            {
+                                "languageUseDescriptor": "_:string*"
+                            }
+                        ]
+                    }
+                    ],
+                    "lastSurname": "string*",
+                    "loginId": "string*",
+                    "maidenName": "string",
+                    "middleName": "string*",
+                    "otherNames": [
+                        {
+                            "otherNameTypeDescriptor": "string*",
+                            "firstName": "string*",
+                            "generationCodeSuffix": "string",
+                            "lastSurname": "string*",
+                            "middleName": "string*",
+                            "personalTitlePrefix": "string*"
+                        }
+                    ],
+                    "personalIdentificationDocuments": [
+                        {
+                            "identificationDocumentUseDescriptor": "string*",
+                            "personalInformationVerificationDescriptor": "string*",
+                            "issuerCountryDescriptor": "string*",
+                            "documentExpirationDate": "string*",
+                            "documentTitle": "string*",
+                            "issuerDocumentIdentificationCode": "string*",
+                            "issuerName": "string*"
+                        }
+                    ],
+                    "personalTitlePrefix": "string*",
+                    "preferredFirstName": "string*",
+                    "preferredLastSurname": "string*",
+                    "sexDescriptor": "string",
+                    "telephones": [
+                        {
+                            "telephoneNumberTypeDescriptor": "string*",
+                            "telephoneNumber": "string*",
+                            "doNotPublishIndicator": "boolean*",
+                            "orderOfPriority": "string*",
+                            "textMessageCapabilityIndicator": "boolean*"
+                        }
+                    ],
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "contactTypeDescriptors":{
+                "operations":{
+                    "contactTypeDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/contactTypeDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "countryDescriptors":{
+                "operations":{
+                    "countryDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/countryDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "courseLevelCharacteristicDescriptors":{
+                "operations":{
+                    "courseLevelCharacteristicDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/courseLevelCharacteristicDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "employmentStatusDescriptors":{
+                "operations":{
+                    "employmentStatusDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/employmentStatusDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "entryTypeDescriptors":{
+                "operations":{
+                    "entryTypeDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/entryTypeDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "gradeLevelDescriptors":{
+                "operations":{
+                    "gradeLevelDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/gradeLevelDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "internetAccessDescriptors":{
+                "operations":{
+                    "internetAccessDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/internetAccessDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "otherNameTypeDescriptors":{
+                "operations":{
+                    "otherNameTypeDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/otherNameTypeDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "personalInformationVerificationDescriptors":{
+                "operations":{
+                    "personalInformationVerificationDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/personalInformationVerificationDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "raceDescriptors":{
+                "operations":{
+                    "raceDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/raceDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "relationDescriptors":{
+                "operations":{
+                    "relationDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/relationDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "schoolCategoryDescriptors":{
+                "operations":{
+                    "schoolCategoryDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/schoolCategoryDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "schoolTypeDescriptors":{
+                "operations":{
+                    "schoolTypeDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/schoolTypeDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "sexDescriptors":{
+                "operations":{
+                    "sexDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/sexDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "sourceSystemDescriptors":{
+                "operations":{
+                    "sourceSystemDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/sourceSystemDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "staffClassificationDescriptors":{
+                "operations":{
+                    "staffClassificationDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/staffClassificationDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "stateAbbreviationDescriptors":{
+                "operations":{
+                    "stateAbbreviationDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/stateAbbreviationDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "students":{
+                "operations":{
+                    "studentsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/students"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "studentUniqueId": "string*",
+                    "personId": "string*",
+                    "sourceSystemDescriptor": "string*",
+                    "citizenshipStatusDescriptor": "string",
+                    "birthCountryDescriptor": "string",
+                    "birthSexDescriptor": "string",
+                    "birthStateAbbreviationDescriptor": "string",
+                    "birthCity": "string",
+                    "birthDate": "string*",
+                    "birthInternationalProvince": "string",
+                    "dateEnteredUS": "string",
+                    "firstName": "string*",
+                    "generationCodeSuffix": "string",
+                    "identificationDocuments": ["_:string"],
+                    "lastSurname": "string*",
+                    "maidenName": "string",
+                    "middleName": "string*",
+                    "multipleBirthStatus": "string",
+                    "otherNames": ["_:string*"],
+                    "personalIdentificationDocuments": ["_:string"],
+                    "personalTitlePrefix": "string*",
+                    "preferredFirstName": "string*",
+                    "preferredLastSurname": "string*",
+                    "visas": ["_:string"],
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "studentIdentificationSystemDescriptors":{
+                "operations":{
+                    "studentIdentificationSystemDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/studentIdentificationSystemDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "telephoneNumberTypeDescriptors":{
+                "operations":{
+                    "telephoneNumberTypeDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/telephoneNumberTypeDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "termDescriptors":{
+                "operations":{
+                    "termDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/termDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "visaDescriptors":{
+                "operations":{
+                    "visaDescriptorsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/visaDescriptors"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "codeValue": "string*",
+                    "namespace": "string*",
+                    "description": "string*",
+                    "effectiveBeginDate": "string*",
+                    "effectiveEndDate": "string*",
+                    "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            }
+        }
+		
+	},
+    "rest": {
+        "config": {
+            "baseUrl": "https://{tenant_id}/v3/ed-fi/",
+            "get": {
+                "maxPageCount": 5,
+                "pagination": {
+                    "mode": "skip_take",
+                    "page_size": "{page_size}",
+                    "params": {
+                        "limit": "{take_count}",
+                        "offset": "{skip_count}"
+                    }
+                },
+                "queryParameters": {
+                    "totalCount": true
+                }
+            },
+            "authentication": "client_credentials",
+            "postAsForm": true,
+            "call_handling": "generic",
+            "test_connection": {
+                "url": "/students?offset=0&limit=1"
+            },
+			"retry": [
+                {
+                    "type": "statusCode",
+                    "statusCode": 504,
+                    "retry": {
+                        "type": "simple",
+                        "maxCount": 10,
+                        "waitTime": 5
+                    }
+                },
+                {
+                    "type": "connectionError"
+                }
+            ]
+        },
+        "authOptions": {
+            "authUrl": "https://{token_uri}",
+            "type": "client-credentials",
+            "useBasicAuthPost": true
+        }
+    },
+    "connection":{
+        "items": [
+            {
+                "name": "token_uri",
+                "type": "textbox",
+                "label": "OAuth Token URI",
+                "value": "my.domain.com/oauth/token"
+            },
+            {
+                "name": "page_size",
+                "type": "textbox",
+                "label": "Page Size:",
+                "value": "100"
+            }
+        ]
+    }
+}
