@@ -225,132 +225,6 @@
                     "_lastModifiedDate": "string"
                 }
             },
-            "contacts":{
-                "operations":{
-                    "contactsList":{
-                        "method":"get",
-                        "call": {
-                            "path": "/contacts"
-                        },
-                        "processing_options": {
-                            "output_field": null
-                        }
-                    }
-                },
-                "key":"id",
-                "resources":{
-                    "id": "string*",
-                    "contactUniqueId": "string*",
-                    "personReference": {
-                        "personId": "_:string",
-                        "sourceSystemDescriptor": "_:string*",
-                        "link": {
-                            "rel": "_:string",
-                            "href": "_:string"
-                        }
-                    },
-                    "addresses": [
-                        {
-                            "addressTypeDescriptor": "string*",
-                            "stateAbbreviationDescriptor": "string*",
-                            "city": "string*",
-                            "postalCode": "string*",
-                            "streetNumberName": "string*",
-                            "localeDescriptor": "string*",
-                            "apartmentRoomSuiteNumber": "string*",
-                            "buildingSiteNumber": "string*",
-                            "congressionalDistrict": "string",
-                            "countyFIPSCode": "string",
-                            "doNotPublishIndicator": "boolean",
-                            "latitude": "string",
-                            "longitude": "string",
-                            "nameOfCounty": "string*",
-                            "periods": [
-                                {
-                                    "beginDate": "string*",
-                                    "endDate": "string*"
-                                }
-                            ]
-                        }
-                    ],
-                    "electronicMails": [
-                        {
-                            "electronicMailTypeDescriptor": "string*",
-                            "electronicMailAddress": "string*",
-                            "doNotPublishIndicator": "boolean*",
-                            "primaryEmailAddressIndicator": "boolean*"
-                        }
-                    ],
-                    "firstName": "string*",
-                    "genderIdentity": "string",
-                    "generationCodeSuffix": "string",
-                    "highestCompletedLevelOfEducationDescriptor": "string",
-                    "internationalAddresses": [
-                        {
-                            "addressTypeDescriptor": "string*",
-                            "countryDescriptor": "string*",
-                            "addressLine1": "string*",
-                            "addressLine2": "string*",
-                            "addressLine3": "string*",
-                            "addressLine4": "string*",
-                            "beginDate": "string*",
-                            "endDate": "string*",
-                            "latitude": "string",
-                            "longitude": "string"
-                        }
-                    ],
-                    "languages": [
-                    {
-                        "languageDescriptor": "string*",
-                        "uses": [
-                            {
-                                "languageUseDescriptor": "_:string*"
-                            }
-                        ]
-                    }
-                    ],
-                    "lastSurname": "string*",
-                    "loginId": "string*",
-                    "maidenName": "string",
-                    "middleName": "string*",
-                    "otherNames": [
-                        {
-                            "otherNameTypeDescriptor": "string*",
-                            "firstName": "string*",
-                            "generationCodeSuffix": "string",
-                            "lastSurname": "string*",
-                            "middleName": "string*",
-                            "personalTitlePrefix": "string*"
-                        }
-                    ],
-                    "personalIdentificationDocuments": [
-                        {
-                            "identificationDocumentUseDescriptor": "string*",
-                            "personalInformationVerificationDescriptor": "string*",
-                            "issuerCountryDescriptor": "string*",
-                            "documentExpirationDate": "string*",
-                            "documentTitle": "string*",
-                            "issuerDocumentIdentificationCode": "string*",
-                            "issuerName": "string*"
-                        }
-                    ],
-                    "personalTitlePrefix": "string*",
-                    "preferredFirstName": "string*",
-                    "preferredLastSurname": "string*",
-                    "sexDescriptor": "string",
-                    "telephones": [
-                        {
-                            "telephoneNumberTypeDescriptor": "string*",
-                            "telephoneNumber": "string*",
-                            "doNotPublishIndicator": "boolean*",
-                            "orderOfPriority": "string*",
-                            "textMessageCapabilityIndicator": "boolean*"
-                        }
-                    ],
-                    "_etag": "string",
-                    "_lastModifiedDate": "string"
-                }
-            },
             "contactTypeDescriptors":{
                 "operations":{
                     "contactTypeDescriptorsList":{
@@ -422,6 +296,96 @@
                     "effectiveBeginDate": "string*",
                     "effectiveEndDate": "string*",
                     "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "courses":{
+                "operations":{
+                    "coursesList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/courses"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "courseCode": "string*",
+                    "identificationCodes": [
+                        {
+                            "courseIdentificationSystemDescriptor": "string*",
+                            "assigningOrganizationIdentificationCode": "string*",
+                            "courseCatalogURL": "string*",
+                            "identificationCode": "string*"
+                        }
+                    ],
+                    "educationOrganizationReference": {
+                        "educationOrganizationId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "academicSubjectDescriptor": "string*",
+                    "careerPathwayDescriptor": "string",
+                    "competencyLevels": [
+                        {
+                            "competencyLevelDescriptor": "string*"
+                        }
+                    ],
+                    "courseDefinedByDescriptor": "string*",
+                    "courseDescription": "string*",
+                    "courseGPAApplicabilityDescriptor": "string",
+                    "courseTitle": "string*",
+                    "dateCourseAdopted": "string*",
+                    "highSchoolCourseRequirement": "boolean*",
+                    "learningObjectives": [
+                        {
+                            "learningObjectiveReference": {
+                                "learningObjectiveId": "_:string*",
+                                "namespace": "_:string*",
+                                "link": {
+                                    "rel": "_:string",
+                                    "href": "_:string"
+                                }
+                            }
+                        }
+                    ],
+                    "learningStandards": [
+                    {
+                        "learningStandardReference": {
+                            "learningStandardId": "_:string*",
+                            "link": {
+                                "rel": "_:string",
+                                "href": "_:string"
+                            }
+                        }
+                    }
+                    ],
+                    "levelCharacteristics": [
+                        {
+                            "courseLevelCharacteristicDescriptor": "string*"
+                        }
+                    ],
+                    "maxCompletionsForCredit": "string",
+                    "maximumAvailableCreditConversion": "string",
+                    "maximumAvailableCredits": "string",
+                    "maximumAvailableCreditTypeDescriptor": "string",
+                    "minimumAvailableCreditConversion": "string",
+                    "minimumAvailableCredits": "string",
+                    "minimumAvailableCreditTypeDescriptor": "string",
+                    "numberOfParts": "string",
+                    "offeredGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "string*"
+                        }
+                    ],
+                    "timeRequiredForCompletion": "string",
                     "_etag": "string",
                     "_lastModifiedDate": "string"
                 }
@@ -526,6 +490,35 @@
                     "_lastModifiedDate": "string"
                 }
             },
+            "locations":{
+                "operations":{
+                    "locationsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/locations"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "classroomIdentificationCode": "string*",
+                    "schoolReference": {
+                        "schoolId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "maximumNumberOfSeats": "string",
+                    "optimalNumberOfSeats": "string",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
             "otherNameTypeDescriptors":{
                 "operations":{
                     "otherNameTypeDescriptorsList":{
@@ -547,6 +540,150 @@
                     "effectiveBeginDate": "string*",
                     "effectiveEndDate": "string*",
                     "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "parents":{
+                "operations":{
+                    "parentsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/parents"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "parentUniqueId": "string*",
+                    "personReference": {
+                        "personId": "_:string*",
+                        "sourceSystemDescriptor": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "addresses": [
+                        {
+                            "addressTypeDescriptor": "string*",
+                            "stateAbbreviationDescriptor": "string*",
+                            "city": "string*",
+                            "postalCode": "string*",
+                            "streetNumberName": "string*",
+                            "localeDescriptor": "string*",
+                            "apartmentRoomSuiteNumber": "string*",
+                            "buildingSiteNumber": "string*",
+                            "congressionalDistrict": "string",
+                            "countyFIPSCode": "string",
+                            "doNotPublishIndicator": "boolean*",
+                            "latitude": "string",
+                            "longitude": "string",
+                            "nameOfCounty": "string",
+                            "periods": [
+                                {
+                                    "beginDate": "_:string",
+                                    "endDate": "_:string"
+                                }
+                            ]
+                        }
+                    ],
+                    "electronicMails": [
+                        {
+                            "electronicMailTypeDescriptor": "_:string*",
+                            "electronicMailAddress": "_:string*",
+                            "doNotPublishIndicator": "boolean*",
+                            "primaryEmailAddressIndicator": "boolean*"
+                        }
+                    ],
+                    "firstName": "string*",
+                    "generationCodeSuffix": "string",
+                    "highestCompletedLevelOfEducationDescriptor": "string",
+                    "internationalAddresses": [
+                        {
+                            "addressTypeDescriptor": "string*",
+                            "countryDescriptor": "string*",
+                            "addressLine1": "string*",
+                            "addressLine2": "string*",
+                            "addressLine3": "string*",
+                            "addressLine4": "string*",
+                            "beginDate": "string",
+                            "endDate": "string",
+                            "latitude": "string",
+                            "longitude": "string"
+                        }
+                    ],
+                    "languages": [
+                        {
+                            "languageDescriptor": "string*",
+                            "uses": [
+                            {
+                                "languageUseDescriptor": "_:string"
+                            }
+                            ]
+                        }
+                    ],
+                    "lastSurname": "string*",
+                    "loginId": "string*",
+                    "maidenName": "string",
+                    "middleName": "string*",
+                    "otherNames": [
+                        {
+                            "otherNameTypeDescriptor": "string*",
+                            "firstName": "string*",
+                            "generationCodeSuffix": "string*",
+                            "lastSurname": "string*",
+                            "middleName": "string*",
+                            "personalTitlePrefix": "string*"
+                        }
+                    ],
+                    "personalIdentificationDocuments": [
+                        {
+                            "identificationDocumentUseDescriptor": "string*",
+                            "personalInformationVerificationDescriptor": "string*",
+                            "issuerCountryDescriptor": "string*",
+                            "documentExpirationDate": "string*",
+                            "documentTitle": "string*",
+                            "issuerDocumentIdentificationCode": "string*",
+                            "issuerName": "string*"
+                        }
+                    ],
+                    "personalTitlePrefix": "string*",
+                    "sexDescriptor": "string*",
+                    "telephones": [
+                        {
+                            "telephoneNumberTypeDescriptor": "string*",
+                            "telephoneNumber": "string*",
+                            "doNotPublishIndicator": "boolean*",
+                            "orderOfPriority": "string*",
+                            "textMessageCapabilityIndicator": "boolean*"
+                        }
+                    ],
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "people":{
+                "operations":{
+                    "peopleList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/people"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "personId": "string*",
+                    "sourceSystemDescriptor": "string*",
                     "_etag": "string",
                     "_lastModifiedDate": "string"
                 }
@@ -651,6 +788,131 @@
                     "_lastModifiedDate": "string"
                 }
             },
+            "schools":{
+                "operations":{
+                    "schoolsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/schools"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "educationOrganizationCategories": [
+                        {
+                            "educationOrganizationCategoryDescriptor": "string*"
+                        }
+                    ],
+                    "gradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "string*"
+                        }
+                    ],
+                    "schoolId": "string*",
+                    "charterApprovalSchoolYearTypeReference": {
+                        "schoolYear": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "localEducationAgencyReference": {
+                        "localEducationAgencyId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "addresses": [
+                        {
+                            "addressTypeDescriptor": "string*",
+                            "stateAbbreviationDescriptor": "string*",
+                            "city": "string*",
+                            "postalCode": "string*",
+                            "streetNumberName": "string*",
+                            "localeDescriptor": "string*",
+                            "apartmentRoomSuiteNumber": "string*",
+                            "buildingSiteNumber": "string*",
+                            "congressionalDistrict": "string*",
+                            "countyFIPSCode": "string*",
+                            "doNotPublishIndicator": "boolean*",
+                            "latitude": "string",
+                            "longitude": "string",
+                            "nameOfCounty": "string*",
+                            "periods": [
+                                {
+                                    "beginDate": "string*",
+                                    "endDate": "string*"
+                                }
+                            ]
+                        }
+                    ],
+                    "administrativeFundingControlDescriptor": "string",
+                    "charterApprovalAgencyTypeDescriptor": "string",
+                    "charterStatusDescriptor": "string",
+                    "identificationCodes": [
+                        {
+                            "educationOrganizationIdentificationSystemDescriptor": "string*",
+                            "identificationCode": "string*"
+                        }
+                    ],
+                    "indicators": [
+                        {
+                            "indicatorDescriptor": "string*",
+                            "indicatorGroupDescriptor": "string*",
+                            "indicatorLevelDescriptor": "string*",
+                            "designatedBy": "string*",
+                            "indicatorValue": "string*",
+                            "periods": [
+                            {
+                                "beginDate": "string*",
+                                "endDate": "string*"
+                            }
+                            ]
+                        }
+                    ],
+                    "institutionTelephones": [
+                        {
+                            "institutionTelephoneNumberTypeDescriptor": "string*",
+                            "telephoneNumber": "string*"
+                        }
+                    ],
+                    "internationalAddresses": [
+                        {
+                            "addressTypeDescriptor": "string*",
+                            "countryDescriptor": "string*",
+                            "addressLine1": "string*",
+                            "addressLine2": "string*",
+                            "addressLine3": "string*",
+                            "addressLine4": "string*",
+                            "beginDate": "string",
+                            "endDate": "string",
+                            "latitude": "string",
+                            "longitude": "string"
+                        }
+                    ],
+                    "internetAccessDescriptor": "string",
+                    "magnetSpecialProgramEmphasisSchoolDescriptor": "string",
+                    "nameOfInstitution": "string*",
+                    "operationalStatusDescriptor": "string*",
+                    "schoolCategories": [
+                        {
+                            "schoolCategoryDescriptor": "string*"
+                        }
+                    ],
+                    "schoolTypeDescriptor": "string*",
+                    "shortNameOfInstitution": "string*",
+                    "titleIPartASchoolDesignationDescriptor": "string",
+                    "webSite": "string",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
             "schoolTypeDescriptors":{
                 "operations":{
                     "schoolTypeDescriptorsList":{
@@ -672,6 +934,123 @@
                     "effectiveBeginDate": "string*",
                     "effectiveEndDate": "string*",
                     "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "schoolYearTypes": {
+                "operations":{
+                    "schoolYearTypesList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/schoolYearTypes"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "schoolYear": "string*",
+                    "currentSchoolYear": "boolean*",
+                    "schoolYearDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "sections": {
+                "operations":{
+                    "sectionsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/sections"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "sectionIdentifier": "string*",
+                    "courseOfferingReference": {
+                        "localCourseCode": "_:string*",
+                        "schoolId": "_:string*",
+                        "schoolYear": "_:string*",
+                        "sessionName": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "locationReference": {
+                        "classroomIdentificationCode": "_:string*",
+                        "schoolId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "locationSchoolReference": {
+                        "schoolId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "availableCreditConversion": "string",
+                    "availableCredits": "string",
+                    "availableCreditTypeDescriptor": "string",
+                    "characteristics": [
+                        {
+                            "sectionCharacteristicDescriptor": "string*"
+                        }
+                    ],
+                    "classPeriods": [
+                        {
+                            "classPeriodReference": {
+                                "classPeriodName": "_:string*",
+                                "schoolId": "_:string*",
+                                "link": {
+                                    "rel": "_:string",
+                                    "href": "_:string"
+                                }
+                            }
+                        }
+                    ],
+                    "courseLevelCharacteristics": [
+                        {
+                            "courseLevelCharacteristicDescriptor": "string*"
+                        }
+                    ],
+                    "educationalEnvironmentDescriptor": "string",
+                    "instructionLanguageDescriptor": "string",
+                    "mediumOfInstructionDescriptor": "string",
+                    "offeredGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "string*"
+                        }
+                    ],
+                    "officialAttendancePeriod": "boolean",
+                    "populationServedDescriptor": "string",
+                    "programs": [
+                        {
+                            "programReference": {
+                                "educationOrganizationId": "string*",
+                                "programName": "string*",
+                                "programTypeDescriptor": "string*",
+                                "link": {
+                                    "rel": "_:string",
+                                    "href": "_:string"
+                                }
+                            }
+                        }
+                    ],
+                    "sectionName": "string*",
+                    "sequenceOfCourse": "string*",
                     "_etag": "string",
                     "_lastModifiedDate": "string"
                 }
@@ -751,6 +1130,306 @@
                     "_lastModifiedDate": "string"
                 }
             },
+            "staffs":{
+                "operations":{
+                    "staffsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/staffs"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "staffUniqueId": "string*",
+                    "personReference": {
+                        "personId": "_:string*",
+                        "sourceSystemDescriptor": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "addresses": [
+                        {
+                            "addressTypeDescriptor": "string*",
+                            "stateAbbreviationDescriptor": "string*",
+                            "city": "string*",
+                            "postalCode": "string*",
+                            "streetNumberName": "string*",
+                            "localeDescriptor": "string*",
+                            "apartmentRoomSuiteNumber": "string*",
+                            "buildingSiteNumber": "string*",
+                            "congressionalDistrict": "string",
+                            "countyFIPSCode": "string",
+                            "doNotPublishIndicator": "boolean*",
+                            "latitude": "string",
+                            "longitude": "string",
+                            "nameOfCounty": "string",
+                            "periods": [
+                            {
+                                "beginDate": "string*",
+                                "endDate": "string*"
+                            }
+                            ]
+                        }
+                    ],
+                    "ancestryEthnicOrigins": [
+                        {
+                            "ancestryEthnicOriginDescriptor": "string*"
+                        }
+                    ],
+                    "birthDate": "string*",
+                    "citizenshipStatusDescriptor": "string*",
+                    "credentials": [
+                        {
+                            "credentialReference": {
+                                "credentialIdentifier": "_:string*",
+                                "stateOfIssueStateAbbreviationDescriptor": "_:string*",
+                                "link": {
+                                    "rel": "_:string",
+                                    "href": "_:string"
+                                }
+                            }
+                        }
+                    ],
+                    "electronicMails": [
+                    {
+                        "electronicMailTypeDescriptor": "string*",
+                        "electronicMailAddress": "string*",
+                        "doNotPublishIndicator": "boolean*",
+                        "primaryEmailAddressIndicator": "boolean*"
+                    }
+                    ],
+                    "firstName": "string*",
+                    "generationCodeSuffix": "string*",
+                    "highestCompletedLevelOfEducationDescriptor": "string*",
+                    "highlyQualifiedTeacher": "boolean*",
+                    "hispanicLatinoEthnicity": "boolean*",
+                    "identificationCodes": [
+                        {
+                            "staffIdentificationSystemDescriptor": "string*",
+                            "assigningOrganizationIdentificationCode": "string*",
+                            "identificationCode": "string*"
+                        }
+                    ],
+                    "identificationDocuments": [
+                    {
+                        "identificationDocumentUseDescriptor": "string*",
+                        "personalInformationVerificationDescriptor": "string*",
+                        "issuerCountryDescriptor": "string*",
+                        "documentExpirationDate": "string*",
+                        "documentTitle": "string*",
+                        "issuerDocumentIdentificationCode": "string*",
+                        "issuerName": "string*"
+                    }
+                    ],
+                    "internationalAddresses": [
+                    {
+                        "addressTypeDescriptor": "string*",
+                        "countryDescriptor": "string*",
+                        "addressLine1": "string*",
+                        "addressLine2": "string*",
+                        "addressLine3": "string*",
+                        "addressLine4": "string*",
+                        "beginDate": "string",
+                        "endDate": "string",
+                        "latitude": "string",
+                        "longitude": "string"
+                    }
+                    ],
+                    "languages": [
+                    {
+                        "languageDescriptor": "string*",
+                        "uses": [
+                            {
+                                "languageUseDescriptor": "string*"
+                            }
+                        ]
+                    }
+                    ],
+                    "lastSurname": "string*",
+                    "loginId": "string*",
+                    "maidenName": "string",
+                    "middleName": "string*",
+                    "oldEthnicityDescriptor": "string",
+                    "otherNames": [
+                        {
+                            "otherNameTypeDescriptor": "string*",
+                            "firstName": "string*",
+                            "generationCodeSuffix": "string*",
+                            "lastSurname": "string*",
+                            "middleName": "string*",
+                            "personalTitlePrefix": "string*"
+                        }
+                    ],
+                    "personalIdentificationDocuments": [
+                        {
+                            "identificationDocumentUseDescriptor": "string*",
+                            "personalInformationVerificationDescriptor": "string*",
+                            "issuerCountryDescriptor": "string*",
+                            "documentExpirationDate": "string*",
+                            "documentTitle": "string*",
+                            "issuerDocumentIdentificationCode": "string*",
+                            "issuerName": "string*"
+                        }
+                    ],
+                    "personalTitlePrefix": "string",
+                    "races": [
+                        {
+                            "raceDescriptor": "string*"
+                        }
+                    ],
+                    "recognitions": [
+                        {
+                            "recognitionTypeDescriptor": "string*",
+                            "achievementCategoryDescriptor": "string*",
+                            "achievementCategorySystem": "string*",
+                            "achievementTitle": "string*",
+                            "criteria": "string*",
+                            "criteriaURL": "string*",
+                            "evidenceStatement": "string*",
+                            "imageURL": "string*",
+                            "issuerName": "string*",
+                            "issuerOriginURL": "string*",
+                            "recognitionAwardDate": "string*",
+                            "recognitionAwardExpiresDate": "string*",
+                            "recognitionDescription": "string*"
+                        }
+                    ],
+                    "sexDescriptor": "string",
+                    "telephones": [
+                        {
+                            "telephoneNumberTypeDescriptor": "string*",
+                            "telephoneNumber": "string*",
+                            "doNotPublishIndicator": "boolean*",
+                            "orderOfPriority": "string*",
+                            "textMessageCapabilityIndicator": "boolean*"
+                        }
+                    ],
+                    "tribalAffiliations": [
+                        {
+                            "tribalAffiliationDescriptor": "string*"
+                        }
+                    ],
+                    "visas": [
+                        {
+                            "visaDescriptor": "string*"
+                        }
+                    ],
+                    "yearsOfPriorProfessionalExperience": "string",
+                    "yearsOfPriorTeachingExperience": "string",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "staffSchoolAssociations":{
+                "operations":{
+                    "staffSchoolAssociationsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/staffSchoolAssociations"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "programAssignmentDescriptor": "string*",
+                    "calendarReference": {
+                        "calendarCode": "_:string*",
+                        "schoolId": "_:string*",
+                        "schoolYear": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "schoolReference": {
+                        "schoolId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "staffReference": {
+                        "staffUniqueId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "academicSubjects": [
+                        {
+                            "academicSubjectDescriptor": "string*"
+                        }
+                    ],
+                    "gradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "string*"
+                        }
+                    ],
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "staffSectionAssociations":{
+                "operations":{
+                    "staffSectionAssociationsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/staffSectionAssociations"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "beginDate": "string*",
+                    "sectionReference": {
+                        "localCourseCode": "_:string*",
+                        "schoolId": "_:string*",
+                        "schoolYear": "_:string*",
+                        "sectionIdentifier": "_:string*",
+                        "sessionName": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "staffReference": {
+                        "staffUniqueId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "classroomPositionDescriptor": "string*",
+                    "endDate": "string*",
+                    "highlyQualifiedTeacher": "boolean",
+                    "percentageContribution": "string*",
+                    "teacherStudentDataLinkExclusion": "boolean",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
             "stateAbbreviationDescriptors":{
                 "operations":{
                     "stateAbbreviationDescriptorsList":{
@@ -772,6 +1451,46 @@
                     "effectiveBeginDate": "string*",
                     "effectiveEndDate": "string*",
                     "shortDescription": "string*",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "studentParentAssociations":{
+                "operations":{
+                    "studentParentAssociationsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/studentParentAssociations"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "parentReference": {
+                        "parentUniqueId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": "_:string*",
+                            "link": {
+                                "rel": "_:string",
+                                "href": "_:string"
+                            }
+                    },
+                    "contactPriority": "string*",
+                    "contactRestrictions": "string*",
+                    "emergencyContactStatus": "boolean*",
+                    "legalGuardian": "boolean*",
+                    "livesWith": "boolean*",
+                    "primaryContactStatus": "boolean*",
+                    "relationDescriptor": "string*",
                     "_etag": "string",
                     "_lastModifiedDate": "string"
                 }
@@ -815,6 +1534,146 @@
                     "preferredFirstName": "string*",
                     "preferredLastSurname": "string*",
                     "visas": ["_:string"],
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "studentSchoolAssociations":{
+                "operations":{
+                    "studentSchoolAssociationsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/studentSchoolAssociations"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "entryDate": "string*",
+                    "programAssignmentDescriptor": "string*",
+                    "calendarReference": {
+                        "calendarCode": "_:string*",
+                        "schoolId": "_:string*",
+                        "schoolYear": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "classOfSchoolYearTypeReference": {
+                        "schoolYear": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "graduationPlanReference": {
+                        "educationOrganizationId": "_:string*",
+                        "graduationPlanTypeDescriptor": "_:string*",
+                        "graduationSchoolYear": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "schoolReference": {
+                        "schoolId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "alternativeGraduationPlans": [
+                        {
+                            "alternativeGraduationPlanReference": {
+                                "educationOrganizationId": "_:string*",
+                                "graduationPlanTypeDescriptor": "_:string*",
+                                "graduationSchoolYear": "_:string*",
+                                "link": {
+                                    "rel": "_:string",
+                                    "href": "_:string"
+                                }
+                            }
+                        }
+                    ],
+                    "educationPlans": [
+                    {
+                        "educationPlanDescriptor": "string*"
+                    }
+                    ],
+                    "employedWhileEnrolled": "boolean",
+                    "entryGradeLevelDescriptor": "string*",
+                    "entryGradeLevelReasonDescriptor": "string*",
+                    "entryTypeDescriptor": "string*",
+                    "exitWithdrawDate": "string*",
+                    "exitWithdrawTypeDescriptor": "string*",
+                    "fullTimeEquivalency": "string",
+                    "primarySchool": "boolean*",
+                    "repeatGradeIndicator": "boolean",
+                    "residencyStatusDescriptor": "string",
+                    "schoolChoiceTransfer": "boolean",
+                    "termCompletionIndicator": "boolean",
+                    "_etag": "string",
+                    "_lastModifiedDate": "string"
+                }
+            },
+            "studentSectionAssociations":{
+                "operations":{
+                    "studentSectionAssociationsList":{
+                        "method":"get",
+                        "call": {
+                            "path": "/studentSectionAssociations"
+                        },
+                        "processing_options": {
+                            "output_field": null
+                        }
+                    }
+                },
+                "key":"id",
+                "resources":{
+                    "id": "string*",
+                    "beginDate": "string*",
+                    "sectionReference": {
+                        "localCourseCode": "_:string*",
+                        "schoolId": "_:string*",
+                        "schoolYear": "_:string*",
+                        "sectionIdentifier": "_:string*",
+                        "sessionName": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": "_:string*",
+                        "link": {
+                            "rel": "_:string",
+                            "href": "_:string"
+                        }
+                    },
+                    "attemptStatusDescriptor": "string",
+                    "endDate": "string*",
+                    "homeroomIndicator": "boolean*",
+                    "repeatIdentifierDescriptor": "string",
+                    "teacherStudentDataLinkExclusion": "boolean",
                     "_etag": "string",
                     "_lastModifiedDate": "string"
                 }
@@ -969,16 +1828,49 @@
     "connection":{
         "items": [
             {
+                "type": "text",
+                "name": "sheet2_Header",
+                "text": "This connector targets the Ed-Fi Data Model 4.0",
+                "label": "",
+                "order": 1
+            },
+            {
+                "name": "tenant_id",
+                "type": "textbox",
+                "label": "Tenent URL:",
+                "value": "customer.domain.com/prod",
+                "required": true,
+                "order": 2
+            },
+            {
                 "name": "token_uri",
                 "type": "textbox",
                 "label": "OAuth Token URI",
-                "value": "my.domain.com/oauth/token"
+                "value": "customer.domain.com/oauth/token",
+                "required": true,
+                "order": 3
+            },
+            {
+                "name": "client_id",
+                "type": "textbox",
+                "label": "Client Key",
+                "required": true,
+                "order": 4
+            },
+            {
+                "name": "client_secret",
+                "type": "textbox",
+                "label": "Client Secret",
+                "required": true,
+                "order": 5
             },
             {
                 "name": "page_size",
                 "type": "textbox",
                 "label": "Page Size:",
-                "value": "100"
+                "value": "1000",
+                "required": true,
+                "order": 6
             }
         ]
     }
